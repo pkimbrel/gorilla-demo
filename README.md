@@ -33,7 +33,7 @@ If you want to start making changes to the formulas, you will need to load the d
 
 First you will have to load the database.  This is done in `src/gorilla_demo/db.clj`.  For example, using EMACS, connect to the running Gorilla REPL (SPC M S C / localhost / Gorilla REPL) and execute `db.clj` (CTL C K).  Then uncomment the `(load-database)` and execute it directly (CTL C C).
 
-** NOTE **: "load-database" is commented out to ensure the clojure file and dependencies load prior to loading the database.  The actual load will take approximately ***5 minutes***!  If the REPL is restarted, the database will need to be reloaded.
+**NOTE**: "load-database" is commented out to ensure the clojure file and dependencies load prior to loading the database.  The actual load will take approximately *5 minutes*!  If the REPL is restarted, the database will need to be reloaded.
 
 Next you will have to execute the following worksheets:
 
