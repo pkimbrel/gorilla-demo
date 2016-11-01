@@ -23,11 +23,11 @@ If you're running locally, you can use 127.0.0.1 or leave the IP option off.  Ho
 
 Once started, you can access the REPL:
 
-http://<your-address>:8080/worksheet.html
+* http://&lt;your-address&gt;:8080/worksheet.html
 
 To view the popluation report output:
 
-http://<your-address>:8080/worksheet.html?filename=src/gorilla_demo/population-report.clj
+* http://&lt;your-address&gt;:8080/worksheet.html?filename=src/gorilla_demo/population-report.clj
 
 If you want to start making changes to the formulas, you will need to load the database and the dependent worksheets.
 
@@ -37,15 +37,15 @@ First you will have to load the database.  This is done in `src/gorilla_demo/db.
 
 Next you will have to execute the following worksheets:
 
-* http://<your-address>:8080/worksheet.html?filename=src/gorilla_demo/population.clj
-* http://<your-address>:8080/worksheet.html?filename=src/gorilla_demo/population-graph.clj
-* http://<your-address>:8080/worksheet.html?filename=src/gorilla_demo/population-choropleth.clj
+* http://&lt;your-address&gt;:8080/worksheet.html?filename=src/gorilla_demo/population.clj
+* http://&lt;your-address&gt;:8080/worksheet.html?filename=src/gorilla_demo/population-graph.clj
+* http://&lt;your-address&gt;:8080/worksheet.html?filename=src/gorilla_demo/population-choropleth.clj
 
 For each worksheet you hit CTL-SHIFT-ENTER which will run everything in the worksheet.  Let each worksheet complete before moving on to the next.
 
 From there you should be able to re-execute the report worksheet:
 
-* http://<your-address>:8080/worksheet.html?filename=src/gorilla_demo/population-report.clj
+* http://&lt;your-address&gt;:8080/worksheet.html?filename=src/gorilla_demo/population-report.clj
 
 ## License
 
