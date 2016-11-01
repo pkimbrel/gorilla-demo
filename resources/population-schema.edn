@@ -1,0 +1,64 @@
+{
+
+;; State
+
+:map.state/name {
+  :db/cardinality :db.cardinality/one
+  :db/fulltext true
+  :db/doc "A state's name"
+}
+
+:map.state/fips {
+  :db/cardinality :db.cardinality/one
+  :db/doc "A state's fip id"
+}
+
+
+;; County
+
+:map.county/name {
+  :db/cardinality :db.cardinality/one
+  :db/fulltext true
+  :db/doc "A county's name"
+}
+
+:map.county/fips {
+  :db/cardinality :db.cardinality/one
+  :db/doc "A county's fip id"
+}
+
+:map.county/geoid {
+  :db/cardinality :db.cardinality/one
+  :db/unique :db.unique/identity
+  :db/doc "A county's geo id"
+}
+
+:map.county/map.state {
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/one
+  :db/doc "A county's state reference"
+}
+
+;; Population
+
+:map.population/map.county {
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/one
+  :db/doc "A county reference"
+}
+
+:map.population/year {
+  :db/cardinality :db.cardinality/one
+  :db/doc "The year of the measure"
+}
+
+:map.population/amount {
+  :db/cardinality :db.cardinality/one
+  :db/doc "The population value"
+}
+
+
+
+
+
+}
