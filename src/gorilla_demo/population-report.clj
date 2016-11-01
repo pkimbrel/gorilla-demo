@@ -3,7 +3,11 @@
 ;; **
 ;;; # Population Demo
 ;;; 
-;;; This is a demonstration of a report using Gorilla REPL
+;;; This is a demonstration of a report using Gorilla REPL.
+;;; 
+;;; As a gratuitous example of using LaTeX to show mathematical forumlas in Gorilla REPL, here's one:
+;;; 
+;;; $$\[ \frac{d}{dx}\left( \int_{0}^{x} f(u)\,du\right)=f(x). \]$$
 ;; **
 
 ;; @@
